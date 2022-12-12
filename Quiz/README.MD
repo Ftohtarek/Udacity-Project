@@ -66,7 +66,7 @@
         - requirment 
             - scrollUp button 
             - method to hide and show and active event on click
-        implementaion
+        - implementaion
             - scrollUpObject -->|____/--> get element by dom
                                 |____/--> hide() remove class show
                                 |____/--> show() add class show
