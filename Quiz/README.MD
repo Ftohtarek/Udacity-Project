@@ -1,16 +1,16 @@
-Project Structure 
-    css
-        styles.css
-    js
-        app.js
-    index.html
+- Project Structure 
+    - css
+        - styles.css
+    - js
+        - app.js
+    - index.html
 
-Aim
-    Apply JavaScript conspet
-    Apply Dom Structur Rection
-    Apply High Performance Implemntation
+- Aim
+    *-* Apply JavaScript conspet
+    *-* Apply Dom Structur Rection
+    *-* Apply High Performance Implemntation
 
-System digram
+- System digram
     1-
         - Proplem 
             - built dynamically Navigation
