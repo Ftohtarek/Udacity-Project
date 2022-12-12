@@ -60,12 +60,15 @@
                                                                             |__/--> remove active [oldPointer]  
                                                                             |__/--> oldPointer assign [newPointer]  
     
+
     3-
-        - proplem
+        - Proplem
             - add arrow scroll up when u scroll down
+
         - requirment 
             - scrollUp button 
             - method to hide and show and active event on click
+        
         - implementaion
             - scrollUpObject -->|____/--> get element by dom
                                 |____/--> hide() remove class show
