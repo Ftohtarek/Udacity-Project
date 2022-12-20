@@ -37,6 +37,9 @@
         loopThrowSection-->bulidNavItem;
         bulidNavItem-->loopThrowSection;
         loopThrowSection-->addToFrgment;
+    ```
+    ```mermaid
+    graph TD;
         addToFrgment-->AddToNavBar;
     ```
 
