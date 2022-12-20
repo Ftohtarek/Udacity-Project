@@ -15,19 +15,19 @@
 
 # System digram
 ## built dynamically Navigation     
-- requirment 
-    + Sections  
+  - requirment 
+      + Sections  
+          >
+          + const sections = document.querySelectorAll('section')
+      + Nav 
+          > List Container to Set dynamicall nav on it
+          >  
+            + const navbarListElement = document.getElementById("navbar__list")
+      + Fragment 
+        > For High Perfomance
         >
-        + const sections = document.querySelectorAll('section')
-    + Nav 
-        > List Container to Set dynamicall nav on it
-        >  
-          + const navbarListElement = document.getElementById("navbar__list")
-    + Fragment 
-      > For High Perfomance
-      >
-        + const navbarListFragment = document.createDocumentFragment()
-        + const navbarListFragment = document.createDocumentFragment()
+          + const navbarListFragment = document.createDocumentFragment()
+          + const navbarListFragment = document.createDocumentFragment()
 
 - implemntaion
 - ![implemntaion of dynamically Navigation](img/setNavItem.png)
