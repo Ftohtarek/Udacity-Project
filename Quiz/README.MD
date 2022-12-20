@@ -1,29 +1,31 @@
 # Project Structure 
-> css
+- css
     > styles.css
->js
+- js
     > app.js
-> index.html
+- img
+    > imgs
+- index.html
 
 # Aim
   - Apply JavaScript conspet
   - Apply Dom Structur Rection
   - Apply High Performance Implemntation
+  - Apply Basic writing and formatting syntax
 
 # System digram
-1.   built dynamically Navigation
-        
-    - requirment 
-        * Sections
-            + Section NO
-                > To Detect No of Nav Item
-            + Section metaData
-                > name (data-nav)
-        * Nav 
-            + List Container to Set dynamicall nav on it
-        * Fragment 
-            + For High Perfomance
-    
+## built dynamically Navigation     
+- requirment 
+    > Sections
+      + Section NO
+        > To Detect No of Nav Item
+      + Section metaData
+        > name (data-nav)
+    > Nav 
+      + List Container to Set dynamicall nav on it
+    > Fragment 
+      + For High Perfomance
+
     - implemntaion
         ![implemntaion of dynamically Navigation](img/setNavItem.png)
         * setNavItem()    
