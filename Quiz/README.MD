@@ -84,8 +84,8 @@ graph TD;
     changeActivationPosition-->removeOldActivation;
     changeActivationPosition-->AddNewActivation;
     changeActivationPosition-->AssignToNewPointer;
-    toggleOnScrollUpIcon-->condation==True
-    toggleOnScrollUpIcon-->condation==Fasle
+    toggleOnScrollUpIcon-->condation-->True
+    toggleOnScrollUpIcon-->condation-->Fasle
     condation==True-->show
     condation==False-->hide
 ```
