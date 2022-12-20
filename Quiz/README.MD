@@ -76,13 +76,18 @@
 ```mermaid
 graph TD;
     whileScrolling-->activeSectionAndNav-->true-->changeActivationPosition;
-    whileScrolling-->toggleOnScrollUpIcon;
-    whileScrolling-->toggleOnNavbar;
-    whileScrolling-->CheckLastTimeUserScrollPage;
     changeActivationPosition-->removeOldActivation;
     changeActivationPosition-->AddNewActivation;
     changeActivationPosition-->AssignToNewPointer;
-    toggleOnScrollUpIcon-->condation-->True-->show;
+
+
+    whileScrolling-->toggleOnScrollUpIcon-->condation-->True-->show;
     condation-->False-->hide;
+
+    whileScrolling-->toggleOnNavbar-->show;
+    whileScrolling-->CheckLastTimeUserScrollPage;
+    CheckLastTimeUserScrollPage-->moreThan5second-->hide;
+    CheckLastTimeUserScrollPage-->lessThan5second-->show;
+
 ```
 
