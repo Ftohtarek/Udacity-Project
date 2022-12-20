@@ -16,18 +16,18 @@
 # System digram
 ## built dynamically Navigation     
 - requirment 
-    > Sections
-      + Section NO
-        > To Detect No of Nav Item
-      + Section metaData
+    + Sections
+        > Section NO  <!-- To Detect No of Nav Item -->
+        > Section HtmlElements
+    + Section metaData
         > name (data-nav)
-    > Nav 
-      + List Container to Set dynamicall nav on it
-    > Fragment 
-      + For High Perfomance
+    + Nav 
+      > List Container to Set dynamicall nav on it
+    + Fragment 
+      > For High Perfomance
 
-    - implemntaion
-        ![implemntaion of dynamically Navigation](img/setNavItem.png)
+- implemntaion
+    * ![implemntaion of dynamically Navigation](img/setNavItem.png)
         * setNavItem()    
             > Loop Throw Sections  
         * BulidNavItem ()     
