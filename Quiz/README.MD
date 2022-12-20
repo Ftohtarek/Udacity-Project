@@ -31,20 +31,14 @@
 
 - implemntaion
     ![implemntaion of dynamically Navigation](img/setNavItem.png)
-    ```
-    section-->bulidNavItem;
-    bulidNavItem-->frgment;
-    frgment-->Navbar;
 
-
-    ```
     ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+    graph TD;
+        A-->B;
+        A-->C;
+        B-->D;
+        C-->D;
+    ```
   + setNavItem Function    
       > Loop Throw All Sections to implement dynamic buliding then add the result to navbar
       > 
