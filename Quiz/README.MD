@@ -17,7 +17,7 @@
 ## built dynamically Navigation     
   - requirment 
     + Sections  
-        > test
+        >   test
             const sections = document.querySelectorAll('section')
     + Nav 
         > List Container to Set dynamicall nav on it
