@@ -18,15 +18,15 @@
 - requirment 
     + Sections  
         >
-        const sections = document.querySelectorAll('section')
+        + const sections = document.querySelectorAll('section')
     + Nav 
         >List Container to Set dynamicall nav on it
         >  
-        const navbarListElement = document.getElementById("navbar__list")
+         + const navbarListElement = document.getElementById("navbar__list")
     + Fragment 
       > For High Perfomance
       >
-        const navbarListFragment = document.createDocumentFragment()
+        + const navbarListFragment = document.createDocumentFragment()
 
 - implemntaion
 - ![implemntaion of dynamically Navigation](img/setNavItem.png)
