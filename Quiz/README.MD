@@ -38,6 +38,13 @@
 
 
     ```
+    ```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
   + setNavItem Function    
       > Loop Throw All Sections to implement dynamic buliding then add the result to navbar
       > 
