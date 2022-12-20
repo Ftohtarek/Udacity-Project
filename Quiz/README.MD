@@ -31,17 +31,19 @@
 
 - implemntaion
     ![implemntaion of dynamically Navigation](img/setNavItem.png)
-    ```mermaid
-    graph TD;
-        setNavItem-->loopThrowSection;
-        loopThrowSection-->bulidNavItem;
-        bulidNavItem-->loopThrowSection;
-        loopThrowSection-->addToFrgment;
-    ```
-    ```mermaid
-    graph TD;
-        addToFrgment-->AddToNavBar;
-    ```
+   > 
+        ```mermaid
+        graph TD;
+            setNavItem-->loopThrowSection;
+            loopThrowSection-->bulidNavItem;
+            bulidNavItem-->loopThrowSection;
+            loopThrowSection-->addToFrgment;
+        ```
+    >
+        ```mermaid
+        graph TD;
+            addToFrgment-->AddToNavBar;
+        ```
 
   + setNavItem Function    
       > Loop Throw All Sections to implement dynamic buliding then add the result to navbar
