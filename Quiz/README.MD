@@ -30,14 +30,31 @@
             const navbarListFragment = document.createDocumentFragment()
 
 - implemntaion
-  ![implemntaion of dynamically Navigation](img/setNavItem.png)
-  * setNavItem()  
-  >>>test  
-      > Loop Throw Sections  
-  * BulidNavItem ()     
-        return with bulid list Item  
-        add returned Item To Fragment then Add Fragment To Nav Container
-        >
+    ![implemntaion of dynamically Navigation](img/setNavItem.png)
+  + setNavItem Function    
+      > Loop Throw All Sections to implement dynamic buliding then add the result to navbar
+      > 
+        sections.forEach(section => {
+            navbarListFragment.appendChild(BulidNavItem(section))
+        })
+        navbarListElement.appendChild(navbarListFragment)  
+  + BulidNavItem ()     
+    > return with list Item 
+    > 
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+        // set link Value From data-nav attribute in section
+        link.textContent = section.getAttribute('data-nav')
+        // set class menu__link to link for active style
+        link.classList.add("menu__link")
+        // set link Event that move to section in scroll depend on the section offset from top
+        link.addEventListener('click', () => {
+            section.scrollIntoView({ behavior: "smooth", });
+        });
+        // append link to listItem
+        listItem.appendChild(link)
+        navList.push(listItem)
+        return listItem
 
 
 ## active section and nav Item when scrolling in viewport of this section
