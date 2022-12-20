@@ -16,8 +16,9 @@
 # System digram
 ## built dynamically Navigation     
   - requirment 
-    + Sections  
-        >   test
+    + Sections 
+        > select all html element Section  
+        >
             const sections = document.querySelectorAll('section')
     + Nav 
         > List Container to Set dynamicall nav on it
@@ -27,10 +28,9 @@
         > For High Perfomance
         >
             const navbarListFragment = document.createDocumentFragment()
-            const navbarListFragment = document.createDocumentFragment()
 
 - implemntaion
-- ![implemntaion of dynamically Navigation](img/setNavItem.png)
+  ![implemntaion of dynamically Navigation](img/setNavItem.png)
   * setNavItem()    
       > Loop Throw Sections  
   * BulidNavItem ()     
