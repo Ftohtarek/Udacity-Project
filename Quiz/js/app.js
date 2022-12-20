@@ -14,7 +14,7 @@ const scrollUp = {
     button: document.querySelector(".scroll-up"),
     show: () => { scrollUp.button.classList.remove('hide') },
     hide: () => { scrollUp.button.classList.add('hide') },
-    fire: () => { window.scrollTo(0, 0) },
+    fire: () => { window.scroll({ top: 0, behavior: "smooth", }); },
     setEvent: () => { scrollUp.button.addEventListener('click', scrollUp.fire) }
 }
 
@@ -44,7 +44,9 @@ function BulidNavItem(section = new HTMLElement) {
     // set class menu__link to link for active style
     link.classList.add("menu__link")
     // set link Event that move to section in scroll depend on the section offset from top
-    link.addEventListener('click', () => { window.scrollTo(0, section.offsetTop) });
+    link.addEventListener('click', () => {
+        section.scrollIntoView({ behavior: "smooth", });
+    });
     // append link to listItem
     listItem.appendChild(link)
     navList.push(listItem)
@@ -95,5 +97,5 @@ function changeActivationPosition(newPointer) {
 
 function pageLoadState(oldScrollY) {
     // it's active after 2s if old distance to top still the same as know then that mean u stop scroll or load and hide navbar
-    setTimeout(() => { if (scrollY == oldScrollY && scrollY > 100) { header.hide() } }, 2000)
+    setTimeout(() => { if (scrollY == oldScrollY && scrollY > 100) { header.hide() } }, 5000)
 }
