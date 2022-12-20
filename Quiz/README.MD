@@ -1,9 +1,10 @@
 # Project Structure 
-## css
-### styles.css
-## js
-### app.js
-## index.html
+    - css
+        * styles.css
+    - js
+        * app.js
+    - index.html
+
 # Aim
     *-* Apply JavaScript conspet
     *-* Apply Dom Structur Rection
