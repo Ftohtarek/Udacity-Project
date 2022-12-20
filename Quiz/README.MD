@@ -18,7 +18,7 @@
   - requirment 
     + Sections  
         >
-          + const sections = document.querySelectorAll('section')
+            const sections = document.querySelectorAll('section')
       + Nav 
           > List Container to Set dynamicall nav on it
           >  
