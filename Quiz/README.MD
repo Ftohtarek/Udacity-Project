@@ -16,15 +16,17 @@
 # System digram
 ## built dynamically Navigation     
 - requirment 
-    + Sections
-        *  Section Numbers              // To Detect No of Nav Item
-        *  Section HtmlElements
-    + Section metaData
-        > name (data-nav)
+    + Sections  
+        >
+        const sections = document.querySelectorAll('section')
     + Nav 
-      > List Container to Set dynamicall nav on it
+        >List Container to Set dynamicall nav on it
+        >  
+        const navbarListElement = document.getElementById("navbar__list")
     + Fragment 
       > For High Perfomance
+      >
+        const navbarListFragment = document.createDocumentFragment()
 
 - implemntaion
 - ![implemntaion of dynamically Navigation](img/setNavItem.png)
@@ -32,8 +34,9 @@
       > Loop Throw Sections  
   * BulidNavItem ()     
         return with bulid list Item  
-        add returned Item To Fragment 
-        then Add Fragment To Nav Container
+        add returned Item To Fragment then Add Fragment To Nav Container
+        >
+
 
 ## active section and nav Item when scrolling in viewport of this section
     - requirment
