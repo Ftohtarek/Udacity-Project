@@ -15,7 +15,7 @@
 
 # System digram
 ## built dynamically Navigation     
-  - requirment 
+- requirment 
     + Sections 
         > select all html element Section  
         >
@@ -69,42 +69,15 @@
         return listItem
 
 ## active section and nav Item when scrolling in viewport of this section
-    - requirment
-        - section position 
-        - real position while Scrolling
-        - navItems
-        - Sections
-    
-    implemntaion 
-        --> getSectionsViewPort() -----------> loop IN Section and return with object contain required info of viewport 
-                                                {offsetTop,offsetHight} add it to SectionsViewPort[]
-        --> oldPointer //refer to Active Element Number ------------------------------\___
-        --> onWindowsScroll()                                                             |
-            --> addEventScroll()                                                          |
-                --> activeSectionAndNav()                                                 |
-                    -->loop Throw sectionsViewPort to detect which section Iam in         |
-                        -->changeActivationPosition(NewPointer)                           |
-                            newPointer isEqual(oldPointer) _______________________________|      
-                                                |
-        sectionNotChange Do Nothin<--\___true___|___false____/----->\___ 
-                                                                        |
-                                                                        |__/--> add active [newPointer]  
-                                                                        |__/--> remove active [oldPointer]  
-                                                                        |__/--> oldPointer assign [newPointer]  
+- requirment
+    + scrolling Event 
+        ```window.addEventListener('scroll',()=>{})```
+- implemntaion
+```
+graph TD;
+    whileScrolling-->activeSectionAndNav;
+    whileScrolling-->toggleOnScrollUpIcon;
+    whileScrolling-->toggleOnNavbar;
+    whileScrolling-->CheckLastTimeUserScrollPage;
+```
 
-
-    3-
-        - Proplem
-            - add arrow scroll up when u scroll down
-
-        - requirment 
-            - scrollUp button 
-            - method to hide and show and active event on click
-        
-        - implementaion
-            - scrollUpObject -->|____/--> get element by dom
-                                |____/--> hide() remove class show
-                                |____/--> show() add class show
-                                |____/--> setEvent() add event click with method scroll up
-            - scrollupObject.setEvent()
-            - show and hide in onWindowScroll()
