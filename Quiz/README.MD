@@ -81,8 +81,8 @@ graph TD;
     changeActivationPosition-->AssignToNewPointer;
 
 
-    whileScrolling-->toggleOnScrollUpIcon-->condation-->True-->show;
-    condation-->False-->hide;
+    whileScrolling-->toggleOnScrollUpIcon-->condation-->True-->showIcon;
+    condation-->False-->hideIcon;
 
     whileScrolling-->toggleOnNavbar-->show;
     whileScrolling-->CheckLastTimeUserScrollPage;
