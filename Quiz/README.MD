@@ -6,33 +6,35 @@
 *index.html
 
 # Aim
-    *-* Apply JavaScript conspet
-    *-* Apply Dom Structur Rection
-    *-* Apply High Performance Implemntation
+  - Apply JavaScript conspet
+  - Apply Dom Structur Rection
+  - Apply High Performance Implemntation
 
 # System digram
-    1-
-        - Proplem 
-            - built dynamically Navigation
+1.  
+    - Proplem 
+        * built dynamically Navigation
         
-        - requirment 
-            - Sections
-                - Section NO
-                    --> To Detect No of Nav Item
-                - Section metaData
-                    --> name (data-nav)
-            - Nav 
-                -->List Container to Set dynamicall nav on it
-            - Fragment 
-                --> For High Perfomance
-        
-        - implemntaion
-            --> setNavItem()    //Loop Throw Sections 
-                |    --> BulidNavItem ()     // return with bulid list Item 
-                |                                <li>   <a class='menu__item' onClick(){scrollToSection} >  data-nav </a></li> 
-                |
-                |________/--> add returned Item To Fragment | 
-                                                            |_________/--> then Add Fragment To Nav Container
+    - requirment 
+        * Sections
+            + Section NO
+                > To Detect No of Nav Item
+            + Section metaData
+                > name (data-nav)
+        * Nav 
+            + List Container to Set dynamicall nav on it
+        * Fragment 
+            + For High Perfomance
+    
+    - implemntaion
+        ![implemntaion of dynamically Navigation](../img/setNavItem.png)
+        * setNavItem()    
+            > Loop Throw Sections  
+        * BulidNavItem ()     
+            > return with bulid list Item  
+            > 
+              + add returned Item To Fragment 
+              + then Add Fragment To Nav Container
     2-
         - Proplem
             - active section and nav Item when scrolling in viewport of this section
