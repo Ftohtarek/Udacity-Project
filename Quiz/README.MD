@@ -26,14 +26,15 @@
     + Fragment 
       > For High Perfomance
 
-- implemntaion ![implemntaion of dynamically Navigation](img/setNavItem.png)
-      * setNavItem()    
-          > Loop Throw Sections  
-      * BulidNavItem ()     
-          > return with bulid list Item  
-          > 
-            + add returned Item To Fragment 
-            + then Add Fragment To Nav Container
+- implemntaion
+- ![implemntaion of dynamically Navigation](img/setNavItem.png)
+  * setNavItem()    
+      > Loop Throw Sections  
+  * BulidNavItem ()     
+      > return with bulid list Item  
+      > 
+        add returned Item To Fragment 
+        then Add Fragment To Nav Container
 
 ## active section and nav Item when scrolling in viewport of this section
     - requirment
