@@ -31,8 +31,7 @@
   * setNavItem()    
       > Loop Throw Sections  
   * BulidNavItem ()     
-      > return with bulid list Item  
-      > 
+        return with bulid list Item  
         add returned Item To Fragment 
         then Add Fragment To Nav Container
 
