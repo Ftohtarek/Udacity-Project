@@ -24,10 +24,10 @@
           >  
             + const navbarListElement = document.getElementById("navbar__list")
       + Fragment 
-            > For High Perfomance
-            >
-              + const navbarListFragment = document.createDocumentFragment()
-              + const navbarListFragment = document.createDocumentFragment()
+               > For High Perfomance
+               >
+                const navbarListFragment = document.createDocumentFragment()
+                const navbarListFragment = document.createDocumentFragment()
 
 - implemntaion
 - ![implemntaion of dynamically Navigation](img/setNavItem.png)
