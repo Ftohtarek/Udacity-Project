@@ -31,6 +31,13 @@
 
 - implemntaion
     ![implemntaion of dynamically Navigation](img/setNavItem.png)
+    ```
+    section-->bulidNavItem;
+    bulidNavItem-->frgment;
+    frgment-->Navbar;
+
+
+    ```
   + setNavItem Function    
       > Loop Throw All Sections to implement dynamic buliding then add the result to navbar
       > 
@@ -56,11 +63,6 @@
         navList.push(listItem)
         return listItem
 
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
 ## active section and nav Item when scrolling in viewport of this section
     - requirment
         - section position 
