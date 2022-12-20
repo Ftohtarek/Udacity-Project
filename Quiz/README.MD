@@ -1,9 +1,9 @@
 # Project Structure 
 > css
-    styles.css
-  js
-     app.js
-  index.html
+    > styles.css
+>js
+    > app.js
+> index.html
 
 # Aim
   - Apply JavaScript conspet
