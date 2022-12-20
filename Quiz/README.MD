@@ -56,8 +56,11 @@
         navList.push(listItem)
         return listItem
 
-```const listItem = document.createElement('li');```
-
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
 ## active section and nav Item when scrolling in viewport of this section
     - requirment
         - section position 
