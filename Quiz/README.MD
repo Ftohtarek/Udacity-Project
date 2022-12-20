@@ -40,8 +40,8 @@
         navbarListElement.appendChild(navbarListFragment)  
   + BulidNavItem ()     
     > return with list Item 
-    > 
-        const listItem = document.createElement('li');
+    >   
+```        const listItem = document.createElement('li');```
         const link = document.createElement('a');
         // set link Value From data-nav attribute in section
         link.textContent = section.getAttribute('data-nav')
@@ -55,9 +55,6 @@
         listItem.appendChild(link)
         navList.push(listItem)
         return listItem
-
-    + 
-        ''' return hello '''
 ## active section and nav Item when scrolling in viewport of this section
     - requirment
         - section position 
