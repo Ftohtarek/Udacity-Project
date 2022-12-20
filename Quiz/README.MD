@@ -33,9 +33,14 @@
     ![implemntaion of dynamically Navigation](img/setNavItem.png)
     ```mermaid
     graph TD;
-        section-->bulidNavItem;
-        bulidNavItem-->frgment;
-        frgment-->Navbar;
+        setNavItem()-->loopThrowSection;
+        loopThrowSection-->bulidNavItem;
+        bulidNavItem-->loopThrowSection;
+        loopThrowSection-->addToFrgment;
+    ```
+    ```
+    graph TD;
+        Frgment-->NavBar;
     ```
 
   + setNavItem Function    
