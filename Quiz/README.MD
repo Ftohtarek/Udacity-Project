@@ -38,10 +38,10 @@
         bulidNavItem-->loopThrowSection;
         loopThrowSection-->addToFrgment;
     ```
-        ```mermaid
-        graph TD;
-            addToFrgment-->AddToNavBar;
-        ```
+    ```mermaid
+    graph TD;
+        addToFrgment-->AddToNavBar;
+    ```
 
   + setNavItem Function    
       > Loop Throw All Sections to implement dynamic buliding then add the result to navbar
