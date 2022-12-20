@@ -73,7 +73,7 @@
     + scrolling Event 
         ```window.addEventListener('scroll',()=>{})```
 - implemntaion
-```
+```mermaid
 graph TD;
     whileScrolling-->activeSectionAndNav;
     whileScrolling-->toggleOnScrollUpIcon;
