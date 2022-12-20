@@ -3,8 +3,11 @@
 graph TD;
 root-->
     css-->styles.css;
+root-->
     js-->app.js;
+root-->
     imgs-->image;
+root-->
     index.html;
 
 ```
