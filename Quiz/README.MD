@@ -11,14 +11,6 @@ root-->
     index.html;
 
 ```
-- css
-    > 
-- js
-    > app.js
-- img
-    > imgs
-- index.html
-
 # Aim
   - Apply JavaScript conspet
   - Apply Dom Structur Rection
