@@ -17,8 +17,8 @@
 ## built dynamically Navigation     
 - requirment 
     + Sections
-        > * Section NO    // To Detect No of Nav Item
-          * Section HtmlElements
+        *  Section Numbers              // To Detect No of Nav Item
+        *  Section HtmlElements
     + Section metaData
         > name (data-nav)
     + Nav 
@@ -26,8 +26,7 @@
     + Fragment 
       > For High Perfomance
 
-- implemntaion
-- ![implemntaion of dynamically Navigation](img/setNavItem.png)
+- implemntaion ![implemntaion of dynamically Navigation](img/setNavItem.png)
       * setNavItem()    
           > Loop Throw Sections  
       * BulidNavItem ()     
