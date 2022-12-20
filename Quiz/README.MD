@@ -79,5 +79,10 @@ graph TD;
     whileScrolling-->toggleOnScrollUpIcon;
     whileScrolling-->toggleOnNavbar;
     whileScrolling-->CheckLastTimeUserScrollPage;
+    activeSectionAndNav-->True;
+    True-->changeActivationPosition;
+    changeActivationPosition-->removeOldActivation;
+    changeActivationPosition-->AddNewActivation;
+    changeActivationPosition-->AssignToNewPointer;
 ```
 
