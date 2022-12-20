@@ -1,9 +1,9 @@
 # Project Structure 
-* css
-    - styles.css
-* js
-    - app.js
-*index.html
+> css
+    styles.css
+  js
+     app.js
+  index.html
 
 # Aim
   - Apply JavaScript conspet
@@ -11,9 +11,7 @@
   - Apply High Performance Implemntation
 
 # System digram
-1.  
-    - Proplem 
-        * built dynamically Navigation
+1.   built dynamically Navigation
         
     - requirment 
         * Sections
@@ -27,7 +25,7 @@
             + For High Perfomance
     
     - implemntaion
-        ![implemntaion of dynamically Navigation](../img/setNavItem.png)
+        ![implemntaion of dynamically Navigation](img/setNavItem.png)
         * setNavItem()    
             > Loop Throw Sections  
         * BulidNavItem ()     
