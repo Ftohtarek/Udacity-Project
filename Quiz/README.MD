@@ -37,10 +37,7 @@
         loopThrowSection-->bulidNavItem;
         bulidNavItem-->loopThrowSection;
         loopThrowSection-->addToFrgment;
-    ```
-    ```
-    graph TD;
-        Frgment-->NavBar;
+        addToFrgment-->AddToNavBar;
     ```
 
   + setNavItem Function    
