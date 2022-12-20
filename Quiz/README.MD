@@ -1,10 +1,11 @@
 # Project Structure 
 ```mermaid
 graph TD;
-css-->styles.css;
-js-->app.js;
-imgs-->image;
-index.html;
+root-->
+    css-->styles.css;
+    js-->app.js;
+    imgs-->image;
+    index.html;
 
 ```
 - css
