@@ -31,14 +31,13 @@
 
 - implemntaion
     ![implemntaion of dynamically Navigation](img/setNavItem.png)
-        ```mermaid
-        graph TD;
-            setNavItem-->loopThrowSection;
-            loopThrowSection-->bulidNavItem;
-            bulidNavItem-->loopThrowSection;
-            loopThrowSection-->addToFrgment;
-        ```
-        
+    ```mermaid
+    graph TD;
+        setNavItem-->loopThrowSection;
+        loopThrowSection-->bulidNavItem;
+        bulidNavItem-->loopThrowSection;
+        loopThrowSection-->addToFrgment;
+    ```
         ```mermaid
         graph TD;
             addToFrgment-->AddToNavBar;
