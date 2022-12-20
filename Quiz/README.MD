@@ -75,12 +75,10 @@
 - implemntaion
 ```mermaid
 graph TD;
-    whileScrolling-->activeSectionAndNav;
+    whileScrolling-->activeSectionAndNav-->true-->changeActivationPosition;
     whileScrolling-->toggleOnScrollUpIcon;
     whileScrolling-->toggleOnNavbar;
     whileScrolling-->CheckLastTimeUserScrollPage;
-    activeSectionAndNav-->True;
-    True-->changeActivationPosition;
     changeActivationPosition-->removeOldActivation;
     changeActivationPosition-->AddNewActivation;
     changeActivationPosition-->AssignToNewPointer;
