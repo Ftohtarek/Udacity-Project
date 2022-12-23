@@ -23,6 +23,11 @@ graph TD;
 server-->retrive;
 server-->add;
 app-->OnClickEvent;
+OnClickEvent-->isZipCodeEmpty-->zipIsEmpty-->popUpAlertShow;
+zipHasValue-->getTempRequestToApi;
+getTempRequestToApi-->tempTryToGetResbonce-->handeApiError-->status-->200ReturnJsonData;
+status-->otherStatus-->popUpAlertShow;
+tempTryToGetResbonce-->catchError-->popUpAlertShow;
 
 
 
