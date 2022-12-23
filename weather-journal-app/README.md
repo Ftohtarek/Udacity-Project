@@ -22,16 +22,16 @@ root-->
 graph TD;
 server-->retrive;
 server-->add;
-app-->OnClickEvent;
-OnClickEvent-->isZipCodeEmpty-->zipIsEmpty-->popUpAlertShow;
-isZipCodeEmpty-->zipHasValue-->getTempRequestToApi;
-getTempRequestToApi-->tempTryToGetResbonce-->handeApiError-->status-->200ReturnJsonData;
-status-->otherStatus-->popUpAlertShow;
-tempTryToGetResbonce-->catchError-->popUpAlertShow;
-200ReturnJsonData-->postDataIntoNodeServer-->add-->postDataIntoNodeServer-->isPostedFalse-->popUpAlertShow;
-postDataIntoNodeServer-->isPostedTrue-->getPostedDataFromServer-->retrive-->getPostedDataFromServer-->
-TryToGetResbonce-->error-->popUpAlertShow;
-TryToGetResbonce-->getPostedDataSucuss-->pushListRow-->entryholderHtmlElement;
+OnClickEvent-->isZipCodeEmpty-->zTure-->popUpAlertShow;
+isZipCodeEmpty-->zFalse-->getTemp;
+getTemp-->GetRequest-->handeApiError-->ReturnJsonData;
+handeApiError-->popUpAlertShow;
+GetRequest-->popUpAlertShow;
+ReturnJsonData-->postDataIntoNodeServer-->add;
+postDataIntoNodeServer-->pFalse-->popUpAlertShow;
+postDataIntoNodeServer-->pTrue-->getPostedDataFromServer-->retrive;
+getPostedDataFromServer-->error-->popUpAlertShow;
+getPostedDataFromServer-->succuss-->pushListRow-->entryholderHtmlElement;
 
 
 ```
