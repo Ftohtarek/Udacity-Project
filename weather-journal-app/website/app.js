@@ -105,11 +105,11 @@ generateBtn.addEventListener('click', function () {
     getTemp(url, ApiKey, zipCode.value)
         .then((temp) => {
             // post Data to nodejs server
-            postDataIntoNodeServer('http://localhost:8000/add', { date: newDate, temperature: temp, userResponse: feelings.value })
+            postDataIntoNodeServer('/add', { date: newDate, temperature: temp, userResponse: feelings.value })
                 .then((res) => {
                     if (res.isPosted) {
                         // get all posted Data
-                        getPostedDataFromServer('http://localhost:8000/retrive')
+                        getPostedDataFromServer('/retrive')
                             .then(function (data) {
                                 serverData = data;
                                 // updata UI
