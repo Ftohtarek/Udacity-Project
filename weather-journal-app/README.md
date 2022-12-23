@@ -11,10 +11,9 @@ use Node Js Express environment to develop a web application and bulid routing
 graph TD;
 root-->server;
 root-->
-website-->
-css;
-    js;
-    index;
+    website-->css;
+    website-->js;
+    website-->index;
 ```
 
 ## Extras
