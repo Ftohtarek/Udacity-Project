@@ -1,22 +1,20 @@
 # Weather-Journal App Project
 
 ## Overview
-app:
+- app:/n
 Asynchronous Wep Application Use web ApI . 
-Server :
+- Server :
 use Node Js Express environment to develop a web application and bulid routing 
 
 ## System structure 
 ```mermaid
 graph TD;
-server-->;
+root-->server;
+root-->
 website-->
-    css;
+css;
     js;
     index;
-
-
-
 ```
 
 ## Extras
