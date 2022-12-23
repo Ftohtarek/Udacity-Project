@@ -25,11 +25,13 @@ server-->add;
 app-->OnClickEvent;
 OnClickEvent-->isZipCodeEmpty-->zipIsEmpty-->popUpAlertShow;
 zipHasValue-->getTempRequestToApi;
-getTempRequestToApi-->tempTryToGetResbonce-->handeApiError-->status-->200 ReturnJsonData;
+getTempRequestToApi-->tempTryToGetResbonce-->handeApiError-->status-->200ReturnJsonData;
 status-->otherStatus-->popUpAlertShow;
 tempTryToGetResbonce-->catchError-->popUpAlertShow;
-
-
+200ReturnJsonData-->postDataIntoNodeServer-->add-->postDataIntoNodeServer-->isPostedFalse-->popUpAlertShow;
+postDataIntoNodeServer-->isPostedTrue-->getPostedDataFromServer-->retrive-->getPostedDataFromServer-->
+TryToGetResbonce-->error-->popUpAlertShow;
+TryToGetResbonce-->getPostedDataSucuss-->pushListRow-->entryholderHtmlElement;
 
 
 ```
