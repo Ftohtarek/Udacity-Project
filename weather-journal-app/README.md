@@ -1,11 +1,12 @@
 # Weather-Journal App Project
 
 ## Overview
-- app:/n
-Asynchronous Wep Application Use web ApI . 
-- Server :
-use Node Js Express environment to develop a web application and bulid routing 
-
+- app: Asynchronous Wep Application Use web ApI . 
+- Server: use Node Js Express environment to develop a web application and bulid routing 
+- project is upload with nodejs server requirment after download run server
+    >
+        node server.js
+    it while open in port 8000
 ## System structure 
 ```mermaid
 graph TD;
@@ -15,6 +16,3 @@ root-->
     website-->js;
     website-->index;
 ```
-
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
