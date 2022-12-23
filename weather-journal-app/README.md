@@ -25,7 +25,7 @@ server-->add;
 app-->OnClickEvent;
 OnClickEvent-->isZipCodeEmpty-->zipIsEmpty-->popUpAlertShow;
 zipHasValue-->getTempRequestToApi;
-getTempRequestToApi-->tempTryToGetResbonce-->handeApiError-->status-->200ReturnJsonData;
+getTempRequestToApi-->tempTryToGetResbonce-->handeApiError-->status-->200 ReturnJsonData;
 status-->otherStatus-->popUpAlertShow;
 tempTryToGetResbonce-->catchError-->popUpAlertShow;
 
