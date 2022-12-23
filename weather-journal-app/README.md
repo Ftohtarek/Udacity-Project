@@ -17,3 +17,13 @@ root-->
     website-->index;
 ```
 ## System Flow Digram 
+```mermaid
+graph TD;
+server-->retrive;
+server-->add;
+app-->OnClickEvent();
+
+
+
+
+```

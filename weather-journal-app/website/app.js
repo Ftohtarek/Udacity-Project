@@ -33,6 +33,7 @@ const popUp =
 // Create a new date instance dynamically with JS
 let d = new Date();
 let newDate = d.getMonth() + 1 + '.' + d.getDate() + '.' + d.getFullYear();
+
 const getTemp = async (url, ApiKey, zipCode) => {
     /* Async Function that call api to get weather information */
     const resbonce = await fetch(url + ApiKey + `&q=${zipCode}`, {
