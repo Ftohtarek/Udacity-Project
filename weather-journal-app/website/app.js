@@ -87,7 +87,7 @@ const getPostedDataFromServer = async (url) => {
 
 const pushListRow = () => {
     /* method push last updata html element into list group  */
-    let obj = serverData[serverData.length - 1]
+    let obj = serverData
     entryHolder.insertAdjacentHTML('beforeend', `
     <li id="date" class="list-group-item col-4">${obj.date}</li>
     <li id="temp" class="list-group-item col-4">${obj.temperature}</li>
