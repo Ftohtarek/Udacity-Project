@@ -7,7 +7,7 @@
     >
         node server.js
     it while open in port 8000
-## System structure 
+## project structure 
 ```mermaid
 graph TD;
 root-->server;
@@ -16,3 +16,4 @@ root-->
     website-->js;
     website-->index;
 ```
+## System Flow Digram 
