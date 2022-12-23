@@ -7,7 +7,7 @@ Server :
 use Node Js Express environment to develop a web application and bulid routing 
 
 ## System structure 
-```
+```mermaid
 graph TD;
 server-->;
 website-->
