@@ -1,7 +1,7 @@
 
 /* weather Api requirment */
 const url = 'https://api.weatherapi.com/v1/current.json';
-const ApiKey = '?key=65f2bf1ee8ea43ff80a141915222112';
+const ApiKey = '?key=65f2bf1ee8ea43ff80a141915222112&units=imperial';
 /* input field Variable*/
 const zipCode = document.getElementById('zip');
 const feelings = document.getElementById('feelings');
@@ -12,9 +12,11 @@ let serverData = [];
 const popUp =
 {
     ele: document.getElementById('popUp'),
+
     isExisting: () => {
         return popUp.ele.style.display == 'block' ? true : false
     },
+
     show: (errorMessage) => {
         let timer = 0
         popUp.isExisting() ? timer = 4999 : timer = 0;
@@ -23,7 +25,9 @@ const popUp =
             popUp.events(); popUp.ele.innerHTML = errorMessage;
         }, timer)
     },
+
     hide: () => { popUp.ele.style.display = 'none' },
+
     events: () => {
         popUp.ele.addEventListener('click', () => { popUp.hide() });
         setTimeout(() => { popUp.hide() }, 5000);
